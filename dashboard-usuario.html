@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Usuario - SportClub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fondo-dashboard">
+
+    <header class="header-dashboard tema-usuario">
+        <img src="logo.png" alt="Logo SportClub" class="logo-dashboard">
+        <div class="acciones-header">
+            <a href="#" class="boton-outline">Editar Perfil</a>
+            <a href="login.html" class="boton-cerrar">Cerrar Sesión</a>
+        </div>
+    </header>
+
+    <nav class="nav-dashboard nav-usuario">
+        <a href="#" class="activo">Inicio</a>
+        <a href="#">Mis Reservas</a>
+        <a href="#">Mi Perfil</a>
+    </nav>
+
+    <main class="contenedor-dashboard">
+        
+        <aside class="columna-perfil">
+            <div class="tarjeta">
+                <h3 class="titulo-tarjeta">Mi Perfil</h3>
+                <div class="info-usuario">
+                    <div class="avatar"></div>
+                    <p><strong>Nombre:</strong> Juan Pérez</p>
+                    <p><strong>Correo:</strong> juan@correo.com</p>
+                    <p><strong>Interés:</strong> Entrenamiento Funcional</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <h3 class="titulo-tarjeta">Mi Progreso</h3>
+                <p style="font-size: 0.9em; margin-bottom: 5px;">Meta de asistencia mensual</p>
+                <div style="background-color: #eee; border-radius: 10px; height: 15px; width: 100%;">
+                    <div style="background-color: #0056b3; height: 100%; border-radius: 10px; width: 75%;"></div>
+                </div>
+                <p style="text-align: right; font-size: 0.8em; margin-top: 5px; color: #555;">75% completado</p>
+            </div>
+        </aside>
+
+        <section class="columna-contenido">
+            
+            <div class="tarjeta">
+                <h3 class="titulo-tarjeta">Mis Próximas Reservas</h3>
+                <ul class="lista-simple">
+                    <li>🗓️ Clase de Crossfit – Lunes 18:00</li>
+                    <li>🗓️ Spinning – Miércoles 09:00</li>
+                </ul>
+            </div>
+
+            <div class="tarjeta">
+                <h3 class="titulo-tarjeta">Clases Disponibles</h3>
+                <div class="grid-clases">
+                    <div class="clase-item">
+                        <h4>Yoga</h4>
+                        <p>Lunes / Miércoles - 10:00</p>
+                        <button class="boton-accion">Reservar</button>
+                    </div>
+                    <div class="clase-item">
+                        <h4>Funcional</h4>
+                        <p>Martes / Jueves - 19:00</p>
+                        <button class="boton-accion">Reservar</button>
+                    </div>
+                    <div class="clase-item">
+                        <h4>Boxeo</h4>
+                        <p>Viernes - 18:00</p>
+                        <button class="boton-accion">Reservar</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>

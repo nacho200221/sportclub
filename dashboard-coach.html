@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Coach - SportClub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fondo-dashboard">
+
+    <header class="header-dashboard tema-coach">
+        <img src="logo.png" alt="Logo SportClub" class="logo-dashboard">
+        <div class="acciones-header">
+            <a href="#" class="boton-outline">Editar Perfil</a>
+            <a href="login.html" class="boton-cerrar">Cerrar Sesión</a>
+        </div>
+    </header>
+
+    <nav class="nav-dashboard nav-coach">
+        <a href="#" class="activo">Inicio</a>
+        <a href="#">Alumnos</a>
+        <a href="#">Clases</a>
+    </nav>
+
+    <main class="contenedor-dashboard">
+        
+        <aside class="columna-perfil">
+            <div class="tarjeta">
+                <h3 class="titulo-tarjeta">Mi Perfil (Coach)</h3>
+                <div class="info-usuario">
+                    <div class="avatar"></div>
+                    <p><strong>Nombre:</strong> Prof. Carlos Silva</p>
+                    <p><strong>Especialidad:</strong> Crossfit / HIIT</p>
+                </div>
+            </div>
+            
+            <div class="tarjeta">
+                <h3 class="titulo-tarjeta">Mis Horarios</h3>
+                <ul class="lista-simple" style="font-size: 0.9em;">
+                    <li>Lunes: 18:00 - 21:00</li>
+                    <li>Martes: 19:00 - 21:00</li>
+                    <li>Viernes: 10:00 - 13:00</li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="columna-contenido">
+            
+            <div class="tarjeta">
+                <h3 class="titulo-tarjeta">Lista de Alumnos</h3>
+                <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <th style="padding: 10px;">Nombre</th>
+                            <th style="padding: 10px;">Correo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 10px;">Juan Pérez</td>
+                            <td style="padding: 10px;">juan@correo.com</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 10px;">María García</td>
+                            <td style="padding: 10px;">m.garcia@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Diego Soto</td>
+                            <td style="padding: 10px;">dsoto_99@outlook.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tarjeta">
+                <h3 class="titulo-tarjeta">Clases Asignadas Hoy</h3>
+                <div class="lista-simple">
+                    <div style="background: #f1f8f1; padding: 15px; border-radius: 6px; border-left: 4px solid #28a745; margin-bottom: 10px;">
+                        <p><strong>Entrenamiento Funcional</strong></p>
+                        <p style="font-size: 0.85em; color: #555;">Martes 19:00 - Sala A</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>

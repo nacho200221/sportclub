@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - SportClub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fondo-dashboard">
+
+    <header class="header-dashboard tema-admin">
+        <img src="logo.png" alt="Logo SportClub" class="logo-dashboard">
+        <div class="acciones-header">
+            <a href="#" class="boton-outline">Editar Perfil</a>
+            <a href="login.html" class="boton-cerrar">Cerrar Sesión</a>
+        </div>
+    </header>
+
+    <nav class="nav-dashboard nav-admin">
+        <a href="#" class="activo">Usuarios</a>
+        <a href="#">Reportes</a>
+        <a href="#">Configuración</a>
+    </nav>
+
+    <main class="contenedor-dashboard">
+        
+        <aside class="columna-perfil">
+            <div class="tarjeta">
+                <h3 class="titulo-tarjeta">Panel de Control</h3>
+                
+                <div style="background: #f8f9fa; padding: 15px; margin-bottom: 10px; border-radius: 5px; text-align: center; border: 1px solid #ddd;">
+                    <h4 style="color: #6f42c1; font-size: 2em; margin: 0;">145</h4>
+                    <p style="color: #555;">Usuarios Activos</p>
+                </div>
+                
+                <div style="background: #f8f9fa; padding: 15px; margin-bottom: 10px; border-radius: 5px; text-align: center; border: 1px solid #ddd;">
+                    <h4 style="color: #6f42c1; font-size: 2em; margin: 0;">12</h4>
+                    <p style="color: #555;">Clases del Día</p>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 5px; text-align: center; border: 1px solid #ddd;">
+                    <h4 style="color: #6f42c1; font-size: 2em; margin: 0;">4</h4>
+                    <p style="color: #555;">Coaches Registrados</p>
+                </div>
+            </div>
+        </aside>
+
+        <section class="columna-contenido">
+            
+            <div class="tarjeta">
+                <h3 class="titulo-tarjeta">Gestión de Usuarios</h3>
+                
+                <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                    <thead>
+                        <tr style="border-bottom: 2px solid #6f42c1;">
+                            <th style="padding: 10px;">Nombre</th>
+                            <th style="padding: 10px;">Correo</th>
+                            <th style="padding: 10px;">Rol</th>
+                            <th style="padding: 10px;">Acción</th>
+                        </tr>
+                        <div class="tarjeta" style="margin-top: 20px;">
+                <h3 class="titulo-tarjeta">Avisos Recientes</h3>
+                <ul class="lista-simple" style="font-size: 0.9em;">
+                    <li style="border-left-color: #2E1A47;">Mantenimiento de máquinas programado para este sábado.</li>
+                    <li style="border-left-color: #F2B705;">Nuevos implementos de Crossfit ya están disponibles en Sala B.</li>
+                </ul>
+            </div>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 10px;">Juan Pérez</td>
+                            <td style="padding: 10px;">juan@correo.com</td>
+                            <td style="padding: 10px;">
+                                <span style="background: #0056b3; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.8em;">Usuario</span>
+                            </td>
+                            <td style="padding: 10px;"><button style="padding: 5px 10px; cursor: pointer;">Editar</button></td>
+                        </tr>
+                        
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 10px;">Prof. Carlos Silva</td>
+                            <td style="padding: 10px;">carlos@sportclub.com</td>
+                            <td style="padding: 10px;">
+                                <span style="background: #28a745; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.8em;">Coach</span>
+                            </td>
+                            <td style="padding: 10px;"><button style="padding: 5px 10px; cursor: pointer;">Editar</button></td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding: 10px;">Admin Principal</td>
+                            <td style="padding: 10px;">admin@sportclub.com</td>
+                            <td style="padding: 10px;">
+                                <span style="background: #6f42c1; color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.8em;">Admin</span>
+                            </td>
+                            <td style="padding: 10px;"><button style="padding: 5px 10px; cursor: pointer;">Editar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar - SportClub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <a href="index.html">
+            <img src="logo.png" alt="Logo SportClub" class="logo-principal">
+        </a>
+    </header>
+
+    <main class="pantalla-centrada">
+        <div class="caja-formulario">
+            <h2>Iniciar Sesión</h2>
+            
+            <form class="formulario">
+                <div class="grupo-input">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+                
+                <div class="grupo-input">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" placeholder="********" required>
+                </div>
+
+                <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #eee;">
+                    <p style="text-align: center; margin-bottom: 15px; font-weight: bold; color: var(--color-principal);">Selecciona tu perfil para ingresar:</p>
+                    
+                    <a href="dashboard-usuario.html" class="boton-bloque" style="background-color: #0056b3; margin-bottom: 10px;">
+                        Ingresar como Usuario
+                    </a>
+                    
+                    <a href="dashboard-coach.html" class="boton-bloque" style="background-color: #28a745; margin-bottom: 10px;">
+                        Ingresar como Coach
+                    </a>
+                    
+                    <a href="dashboard-admin.html" class="boton-bloque" style="background-color: #6f42c1;">
+                        Ingresar como Admin
+                    </a>
+                </div>
+            </form>
+
+            <div class="enlaces-extra">
+                <p><a href="recuperar.html">¿Olvidaste tu contraseña?</a></p>
+                <br>
+                <p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
