@@ -18,7 +18,7 @@
         <div class="caja-formulario">
             <h2>Iniciar Sesión</h2>
             
-            <form class="formulario">
+            <form id="form-login" class="formulario">
                 <div class="grupo-input">
                     <label for="correo">Correo Electrónico</label>
                     <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
@@ -29,21 +29,9 @@
                     <input type="password" id="password" placeholder="********" required>
                 </div>
 
-                <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #eee;">
-                    <p style="text-align: center; margin-bottom: 15px; font-weight: bold; color: var(--color-principal);">Selecciona tu perfil para ingresar:</p>
-                    
-                    <a href="dashboard-usuario.html" class="boton-bloque" style="background-color: #0056b3; margin-bottom: 10px;">
-                        Ingresar como Usuario
-                    </a>
-                    
-                    <a href="dashboard-coach.html" class="boton-bloque" style="background-color: #28a745; margin-bottom: 10px;">
-                        Ingresar como Coach
-                    </a>
-                    
-                    <a href="dashboard-admin.html" class="boton-bloque" style="background-color: #6f42c1;">
-                        Ingresar como Admin
-                    </a>
-                </div>
+                <p id="mensaje-error" style="color: #dc3545; font-size: 0.9em; text-align: center; display: none; margin-bottom: 10px; font-weight: bold;"></p>
+
+                <button type="submit" class="boton-bloque" style="width: 100%; border: none; cursor: pointer;">Ingresar</button>
             </form>
 
             <div class="enlaces-extra">
@@ -54,5 +42,6 @@
         </div>
     </main>
 
+<script src="login.js"></script>
 </body>
 </html>
