@@ -294,3 +294,8 @@ background-color: var(--color-principal);
     background-color: var(--color-acento); 
     color: var(--color-principal); 
 }
+
+.logo-cabecera {
+  width: 180px;
+  height: auto;
+}
