@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - SportClub</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<script src="js/register.js"></script>
 <body>
 
     <header class="encabezado">
         <a href="index.html">
-            <img src="logo.png" alt="Logo SportClub" class="logo-principal">
+            <img src="assets/logo.png" alt="Logo SportClub" class="logo-cabecera">
         </a>
     </header>
 
@@ -18,7 +19,7 @@
         <div class="caja-formulario">
             <h2>Crear Cuenta</h2>
             
-            <form class="formulario">
+            <form class="formulario" id="form-register">
                 <div class="grupo-input">
                     <label for="nombre">Nombre Completo</label>
                     <input type="text" id="nombre" placeholder="Ej: Juan Pérez" required>
@@ -28,7 +29,7 @@
                     <label for="correo">Correo Electrónico</label>
                     <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
                 </div>
-                
+
                 <div class="grupo-input">
                     <label for="password">Contraseña</label>
                     <input type="password" id="password" placeholder="Crea una contraseña" required>
@@ -39,7 +40,9 @@
                     <input type="text" id="info-extra" placeholder="Ej: Crossfit, Yoga, Pesas...">
                 </div>
 
-                <a href="login.html" class="boton-bloque">Registrar y Continuar</a>
+                <p id="mensaje-error" style="color: red; display: none; margin-bottom: 15px; font-weight: bold;"></p>
+
+                <button type="submit" class="boton-bloque">Registrar y Continuar</button>
             </form>
 
             <div class="enlaces-extra">
@@ -47,6 +50,6 @@
             </div>
         </div>
     </main>
-
+<script src="js/register.js"></script>
 </body>
 </html>

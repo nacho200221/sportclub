@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel de Administración - SportClub</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/auth-guard.js"></script>
 </head>
 <body class="fondo-dashboard">
 
     <header class="header-dashboard tema-admin">
-        <img src="logo.png" alt="Logo SportClub" class="logo-dashboard">
-        <div class="acciones-header">
-            <a href="#" class="boton-outline">Editar Perfil</a>
-            <a href="login.html" class="boton-cerrar">Cerrar Sesión</a>
-        </div>
+    <img src="assets/logo.png" alt="Logo SportClub" class="logo-dashboard">
+    
+    <div class="acciones-header">
+        <span style="margin-right: 15px; font-weight: bold;">Hola, <span id="nombre-usuario">...</span></span>
+        
+        <a href="#" class="boton-outline">Editar Perfil</a>
+        
+        <button onclick="logout()" class="boton-cerrar" style="border: none; cursor: pointer;">Cerrar Sesión</button>
+    </div>
     </header>
 
     <nav class="nav-dashboard nav-admin">
